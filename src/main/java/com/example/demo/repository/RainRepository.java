@@ -1,6 +1,6 @@
 package com.example.demo.repository;
-import com.example.demo.domain.Rain;
+import com.example.demo.domain.RainAmount;
 
 public interface RainRepository {
-    public Rain saveRain(Rain rain);
+    public RainAmount saveRain(RainAmount rainAmount);
 }

@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 0;
+  height: 100vh;
+  color: #2e3033;
+}
+.layout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.toolbar_container {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: #dee2e6;
+}
+.logo {
+  margin-left: 20px;
+  width: 100px;
+  height: 40px;
+  background-color: white;
+}
+.login {
+  width: 100px;
+  height: 40px;
+  margin-right: 20px;
+  background-color: white;
+}
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+}
+
+.recomand {
+  padding: 0 30px 0 30px;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 75%;
+}
+#button_list {
+  display: flex;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+  white-space: nowrap; /* 버튼들이 한 줄로 나열되도록 함 */
+}
+#button_list button {
+  background: #ffffff;
+  border: 1px solid #dee2e6;
+  height: 80%;
+  margin: 0 20px 0 20px;
+  border-radius: 15px;
+  min-width: 200px;
+}
+#button_list button:hover {
+  background-color: #e9ecef;
+}
+.container2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;
+}
+.graph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70%;
+  width: 50%;
+  margin: 0 20px 0 20px;
+}
+.chartname {
+  font-size: 20px;
+  height: 10%;
+  width: 100px;
+}
+#weatherChart1 {
+  width: 100%;
+  height: 90%;
+  border: 1px solid #dee2e6;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#weatherChart2 {
+  width: 100%;
+  height: 90%;
+  border: 1px solid #dee2e6;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

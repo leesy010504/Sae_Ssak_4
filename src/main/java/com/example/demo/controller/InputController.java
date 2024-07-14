@@ -1,6 +1,6 @@
 package com.example.demo.controller;
 
-import com.example.demo.domain.Rain;
+import com.example.demo.domain.RainAmount;
 import com.example.demo.domain.Tem;
 import com.example.demo.dto.RainForm;
 import com.example.demo.dto.TemForm;
@@ -32,15 +32,11 @@ public class InputController {
         this.rainService = rainService;
     }
 
-    @PostMapping("/rain")
-    public ResponseEntity<Rain> saveRain(@RequestBody RainForm form) {
-        Rain savedRain = rainService.saveRain(form);
-        return ResponseEntity.ok(savedRain);
-    }
 
-    @PostMapping("/tem")
-    public ResponseEntity<Tem> saveTem(@RequestBody TemForm form) {
-        Tem savedTem = temService.saveTem(form);
-        return ResponseEntity.ok(savedTem);
-    }
+
+//    @PostMapping("/tem")
+//    public ResponseEntity<Tem> saveTem(@RequestBody TemForm form) {
+////        Tem savedTem = temService.saveTem(form);
+//        return ResponseEntity.ok(savedTem);
+//    }
 }

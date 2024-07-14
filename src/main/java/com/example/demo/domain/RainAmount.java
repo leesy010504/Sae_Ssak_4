@@ -2,13 +2,17 @@ package com.example.demo.domain;
 
 import jakarta.persistence.*;
 @Entity
-public class Rain {
+public class RainAmount {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long input_id;
+    @Column(name = "input_id")
+    private Long inputId;
 
     @Column
-    private String Location;
+    private int year;
+
+    @Column
+    private String region;
 
     @Column
     private Long Jan;
@@ -47,8 +51,9 @@ public class Rain {
     private Long Dec;
 
     // 모든 필드를 초기화하는 생성자
-    public Rain(String location, Long jan, Long feb, Long mar, Long apr, Long may, Long jun, Long jul, Long aug, Long sep, Long oct, Long nov, Long dec) {
-        this.Location = location;
+    public RainAmount(String region, int year, Long jan, Long feb, Long mar, Long apr, Long may, Long jun, Long jul, Long aug, Long sep, Long oct, Long nov, Long dec) {
+        this.region = region;
+        this.year = year;
         this.Jan = jan;
         this.Feb = feb;
         this.Mar = mar;
@@ -61,6 +66,9 @@ public class Rain {
         this.Oct = oct;
         this.Nov = nov;
         this.Dec = dec;
+    }
+
+    public RainAmount() {
     }
 }
 

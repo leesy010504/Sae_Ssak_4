@@ -8,6 +8,9 @@ public class Tem {
     private Long input_id;
 
     @Column
+    private int Year;
+
+    @Column
     private String Location;
 
     @Column
@@ -46,8 +49,9 @@ public class Tem {
     @Column
     private Long Dec;
 
-    public Tem(String location, Long jan, Long feb, Long mar, Long apr, Long may, Long jun, Long jul, Long aug, Long sep, Long oct, Long nov, Long dec) {
+    public Tem(String location, int year, Long jan, Long feb, Long mar, Long apr, Long may, Long jun, Long jul, Long aug, Long sep, Long oct, Long nov, Long dec) {
         this.Location = location;
+        this.Year = year;
         this.Jan = jan;
         this.Feb = feb;
         this.Mar = mar;
@@ -60,6 +64,9 @@ public class Tem {
         this.Oct = oct;
         this.Nov = nov;
         this.Dec = dec;
+    }
+
+    public Tem() {
     }
 }
 

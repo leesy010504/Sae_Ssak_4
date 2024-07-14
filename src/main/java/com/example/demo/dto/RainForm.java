@@ -2,6 +2,7 @@ package com.example.demo.dto;
 
 public record RainForm(
         Long input_id,
+        int year,
         String location,
         Long jan,
         Long feb,

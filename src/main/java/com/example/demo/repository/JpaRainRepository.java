@@ -1,7 +1,6 @@
 package com.example.demo.repository;
 
-import com.example.demo.domain.Input;
-import com.example.demo.domain.Rain;
+import com.example.demo.domain.RainAmount;
 import jakarta.persistence.EntityManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -17,8 +16,8 @@ public class JpaRainRepository implements RainRepository{
     }
 
     @Override
-    public Rain saveRain(Rain rain) {
-        em.persist(rain);
-        return rain;
+    public RainAmount saveRain(RainAmount rainAmount) {
+        em.persist(rainAmount);
+        return rainAmount;
     }
 }

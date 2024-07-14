@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" href="/main.CSS" />
+    <link rel="stylesheet" href="/headstyle.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Chart.js CDN -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+
+    <title>Crop</title>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="toolbar_container">
+        <div class="logo"></div>
+        <div class="login"></div>
+      </div>
+      <div class="container1">
+        <div class="head-block">
+          <form class="insert-form" onsubmit="handleSearch(event)">
+            <div class="input-wrapper">
+              <select class="input year" id="year-input">
+                <option value="" disabled selected>연도</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+              </select>
+            </div>
+            <div class="input-wrapper">
+              <input
+                type="text"
+                class="input region"
+                placeholder="지역명"
+                id="region-input"
+              />
+            </div>
+            <div class="input-wrapper">
+              <button class="input search-button" id="search-button" disabled>
+                검 색
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="recomand">
+          <div class="recomand_title">추천 작물 리스트</div>
+          <div id="button_list"></div>
+        </div>
+      </div>
+      <div class="container2">
+        <div class="graph">
+          <div class="chartname">예측 기온</div>
+          <canvas id="weatherChart1"></canvas>
+        </div>
+        <div class="graph">
+          <div class="chartname">예측 강수량</div>
+          <canvas id="weatherChart2"></canvas>
+        </div>
+      </div>
+    </div>
+    <script src="button_list.js"></script>
+    <script src="head.js"></script>
+    <script src="graph1.js"></script>
+    <script src="graph2.js"></script>
+  </body>
+</html>

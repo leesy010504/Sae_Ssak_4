@@ -16,22 +16,22 @@ public class TemService {
         this.temRepository = temRepository;
     }
 
-    public Tem saveTem(TemForm form) {
-        Tem tem = new Tem(
-                form.location(),
-                form.jan(),
-                form.feb(),
-                form.mar(),
-                form.apr(),
-                form.may(),
-                form.jun(),
-                form.jul(),
-                form.aug(),
-                form.sep(),
-                form.oct(),
-                form.nov(),
-                form.dec()
-        );
-        return temRepository.saveTem(tem);
-    }
+//    public Tem saveTem(TemForm form) {
+//        Tem tem = new Tem(
+//                form.location(),
+//                form.jan(),
+//                form.feb(),
+//                form.mar(),
+//                form.apr(),
+//                form.may(),
+//                form.jun(),
+//                form.jul(),
+//                form.aug(),
+//                form.sep(),
+//                form.oct(),
+//                form.nov(),
+//                form.dec()
+//        );
+//        return temRepository.saveTem(tem);
+//    }
 }
